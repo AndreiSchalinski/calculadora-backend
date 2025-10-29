@@ -36,6 +36,7 @@ public class ControllerCalculadora {
              
              tabela += i+" - Data Competência - Início: "+dataInicial+" - | Meio: "+dataMetade+" | Último dia: "+ultimoDiaMes+" | - Valor de Empréstimo - "+dto.valorEmprestimo()+"\n";
              listLinhasTabela.add(new TabelaDTO(dataInicial));
+             listLinhasTabela.add(new TabelaDTO(ultimoDiaMes));
              
              dataInicial = dataInicial.plusMonths(1);
         }
